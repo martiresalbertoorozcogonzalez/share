@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = App\User::get();
+
+    return view('welcome', ['users' => $users]);
 });
