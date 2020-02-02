@@ -23,7 +23,7 @@ class Video extends Model
 
     public function image()
     {
-        return $this->morphOne(Image::class, 'imageble');
+        return $this->morphOne(Image::class, 'imageable');
     }
 
     public function tags()
