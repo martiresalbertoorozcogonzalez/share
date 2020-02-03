@@ -70,11 +70,11 @@
                     Eloquent: relaciones
                 </div>
                 
-            @foreach ($users as $user )
-            <div class="links">
-            <a href="#">{{ $user->name}}</a>
-            </div>
-            @endforeach
+                <div class="links">
+                    @foreach ($users as $user )
+                      <a href="{{ route('profile', $user->id) }}">{{ $user->name}}</a>
+                    @endforeach
+                </div>
             </div>
         </div>
     </body>
